@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+
+    tools:context=".MainActivity" 
+    android:background="#000000">
+    
+     <com.example.dots.AnimatedView
+        android:id="@+id/anim_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop = "true"
+    android:layout_marginBottom="50dp"
+        android:text="@string/hello_world" />
+    
+    <com.example.dots.RandDotsView
+        android:id="@+id/rand_dots"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_alignParentTop = "true"
+     android:layout_marginBottom="50dp"
+       
+        android:background="#0000"
+        android:text="@string/hello_world" />
+    
+    
+
+     
+      
+    <Button android:id="@+id/left"
+        android:layout_width="100dp"
+     
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickLeft" />
+    
+    <Button android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_toRightOf="@id/left"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+       
+        android:onClick = "clickCenter" />
+    
+    <Button android:id="@+id/right"
+        android:layout_width="100dp"
+       
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/center"
+        android:onClick = "clickRight" />
+   
+    
+   
+    
+    
+    
+
+</RelativeLayout>
